@@ -6,6 +6,8 @@ Quite often, you will end up mis-interpreting, or mistakenly copy-n-pasting a th
 
 Or you will use **this** ready made responsive skeleton template ready with [Bootstrap](http://getbootstrap.com/), [Font Awesome](http://fortawesome.github.io/Font-Awesome/), [JQuery](http://jquery.com/), and [Respond JS](https://github.com/scottjehl/Respond).
 
+Check out the [demo](http://visitsb.github.io/template/) page.
+
 Template has a simple goal in mind - Provide a simple standard, skeleton HTML page that gives you a drop-in page to immediately begin with Responsive Web Design, while you pick up required skills on popular libraries on the go.
 
 Nothing fancy, nothing complicated, but a great time-saver for those who want get their websites responsive without the need to craft a responsive page themselves.
