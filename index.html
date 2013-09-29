@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes" />
 <meta name="language" content="en" />
-<meta name="description" content="TODO: Place your product description here" />
+<meta name="description" content="TODO: Place your product description here. Simple standard, skeleton HTML page that gives you a drop-in page to immediately begin with Responsive Web Design." />
 <title>Responsive Template</title>
 <link rel="stylesheet" href="css/bootstrap.min.css?v=2.3.2" />
 <link rel="stylesheet" href="css/font-awesome.min.css?v=3.2.1" />
@@ -13,9 +13,16 @@
 <![endif]-->
 <style type="text/css">
 <!--
+body {	/* Set base sizes for responsive typography */
+	font-family: 'noto_sansregular';
+	font-size: 16px;
+	line-height: 24px;
+	color: #88006B;
+}
+
 /* TODO: Insert, modify any custom styles, overrides here */
 #header {
-	background-color: #DFF0D8;
+	background-color: #FFCABF;
 }
 
 #content {
@@ -23,7 +30,19 @@
 }
 
 #footer {
-	background-color: #F9F9F9;
+	background-color: #FF9480;
+	color: #E8FFBF;
+}
+
+dl dt,
+dl dd {
+	font-size: 1.0em;
+	line-height: 1.4em;
+}
+
+.label, .badge {
+  background-color: #72B300;
+  color: #BFFFDC;
 }
 
 /* TODO: Override any styles as needed, for example */
@@ -40,7 +59,8 @@
 <!--[if lt IE 9]>
 	<script type="text/javascript" language="javascript" src="js/html5shiv-printshiv.min.js?v=3.6.2"></script>
 <![endif]-->
-<!-- TODO: Provide each of below logo images with suggested sizes for iOs device support -->
+<link rel="stylesheet" href="css/font.css" />
+<!-- TODO: Provide each of below logo images with suggested sizes for iOs device support. Use included logo.psd to get started. -->
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
@@ -54,11 +74,13 @@
     <section id="header" class="row-fluid">
         <div class="span12">
             <ul class="nav nav-pills pull-right">
-                <li><a href="https://twitter.com/visitsb" target="_blank"><i class="icon-twitter"></i> Twitter</a></li>
-                <li><a href="https://github.com/visitsb" target="_blank"><i class="icon-github"></i> Github</a></li>
+                <li><a href="https://github.com/visitsb"><i class="icon-github"></i></a></li>
+                <li><a href="https://twitter.com/visitsb"><i class="icon-twitter"></i></a></li>
+                <li><a href="http://www.linkedin.com/in/shantibhushan"><i class="icon-linkedin"></i></a></li>
+                <li><a href="https://www.facebook.com/visitsb"><i class="icon-facebook"></i></a></li>
             </ul>
             <!-- /.nav -->
-            <a class="brand" href="/"><img src="img/logo.png" alt="Your product name" width="54" height="42" /></a> <small>Header tagline</small>
+            <a class="brand" href="/"><img src="img/logo.png" alt="Your product name" width="54" height="42" /> TEMPLATE</a> <small>Header tagline</small>
             <!-- /.brand -->
         </div>
     </section>
@@ -69,7 +91,9 @@
             <dl>
                 <dt>What</dt>
                 <dd>
-                    <p>Responsive HTML web page template. Check how this template page responds on all devices, browsers in exactly the same way. Try resizing your browser.</p>
+                    <p>Responsive HTML web page template. Check how this template page responds on all devices, browsers in exactly the same way. Full responsive, typographically adaptive. </p>
+                    <p>Template is a single HTML page which you can use as a skeleton for designing your responsive, adaptive web site.</p>
+                    <p>Try resizing your browser, or view it on your phone, tablet or desktop.</p>
                 </dd>
                 <dt>Get</dt>
                 <dd>
@@ -81,7 +105,7 @@
                 </dd>
                 <dt>Credits</dt>
                 <dd>
-                    <p>Use it anyway you like by @visitsb</p>
+                    <p><a class="label" href="https://github.com/visitsb/template" target="_self">@visitsb</a> says the sooner you use this, the better credit you'll deserve.</p>
                 </dd>
             </dl>
         </div>
@@ -102,8 +126,15 @@
 	<script type="text/javascript" language="javascript" src="js/respond.min.js?v=1.3.0"></script>
 <![endif]-->
 <!-- TODO: Include any additional 3rd party JS libraries here. Feel free to host or pull these off a CDN -->
+<script type="text/javascript" language="javascript" src="js/flowtype.min.js?v=1.0"></script>
 <script type="text/javascript" language="javascript"><!--
 	$(document).ready(function(event) {
+		$('body').flowtype({	// TODO: Tweak responsive typography options here
+			minFont   : 11,
+			fontRatio : 80,
+			lineRatio : 1.45
+		});
+		
 		// TODO: Place your custom JS code here
 	});
 //--></script>
