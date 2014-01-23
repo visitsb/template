@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
 <meta name="language" content="en" />
 <meta name="description" content="TODO: Place your product description here. Simple standard, skeleton HTML page that gives you a drop-in page to immediately begin with Responsive Web Design." />
 <title>Responsive Template</title>
-<link rel="stylesheet" href="css/bootstrap.min.css?v=2.3.2" />
-<link rel="stylesheet" href="css/font-awesome.min.css?v=3.2.1" />
+<link rel="stylesheet" href="css/bootstrap-3.0.3.min.css" />
+<link rel="stylesheet" href="css/font-awesome-3.2.1.min.css" />
 <!--[if IE 7]>
-	<link rel="stylesheet" href="css/font-awesome-ie7.min.css?v=3.2.1" />
+	<link rel="stylesheet" href="css/font-awesome-ie7-3.2.1.min.css" />
 <![endif]-->
 <style type="text/css">
 <!--
@@ -20,44 +21,22 @@ body {	/* Set base sizes for responsive typography */
 	color: #88006B;
 }
 
-/* TODO: Insert, modify any custom styles, overrides here */
-#header {
-	background-color: #FFCABF;
+.jumbotron {
+	box-shadow: -1px -1px 11px rgba(0, 0, 0, 0.176) inset;
 }
 
-#content {
+.thumbnail {
+	background-clip: padding-box;
 	background-color: #FFFFFF;
-}
-
-#footer {
-	background-color: #FF9480;
-	color: #E8FFBF;
-}
-
-dl dt,
-dl dd {
-	font-size: 1.0em;
-	line-height: 1.4em;
-}
-
-.label, .badge {
-  background-color: #72B300;
-  color: #BFFFDC;
-}
-
-/* TODO: Override any styles as needed, for example */
-.nav {
-	margin-bottom: 0px;
-}
-
-.nav li {
-	display: inline;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	box-shadow: -1px -1px 11px rgba(0, 0, 0, 0.176);
 }
 -->
 </style>
-<link rel="stylesheet" href="css/bootstrap-responsive.min.css?v=2.3.2" />
 <!--[if lt IE 9]>
-	<script type="text/javascript" language="javascript" src="js/html5shiv-printshiv.min.js?v=3.6.2"></script>
+	<script type="text/javascript" language="javascript" src="js/html5shiv-printshiv-3.6.2.min.js"></script>
+	<script type="text/javascript" language="javascript" src="js/respond-1.4.2.min.js"></script>
 <![endif]-->
 <link rel="stylesheet" href="css/font.css" />
 <!-- TODO: Provide each of below logo images with suggested sizes for iOs device support. Use included logo.psd to get started. -->
@@ -69,66 +48,81 @@ dl dd {
 <link rel="shortcut icon" href="img/favicon.png">
 </head>
 <body>
-<!-- TODO: Simply remove -fluid on container, row if you want a fixed width responsive layout -->
-<div class="container-fluid">
-    <section id="header" class="row-fluid">
-        <div class="span12">
-            <ul class="nav nav-pills pull-right">
-                <li><a href="https://github.com/visitsb"><i class="icon-github"></i></a></li>
-                <li><a href="https://twitter.com/visitsb"><i class="icon-twitter"></i></a></li>
-                <li><a href="http://www.linkedin.com/in/shantibhushan"><i class="icon-linkedin"></i></a></li>
-                <li><a href="https://www.facebook.com/visitsb"><i class="icon-facebook"></i></a></li>
-            </ul>
-            <!-- /.nav -->
-            <a class="brand" href="/"><img src="img/logo.png" alt="Your product name" width="54" height="42" /> TEMPLATE</a> <small>Responsive web page template</small>
-            <!-- /.brand -->
+<!-- .container ->
+.row -> .col-(xs|sm|md|lg)-[1,12] -->
+<!-- Nest using .row ->
+.col-* pairs inside a col-? -->
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="page-header">
+                            <h3>Responsive <abbr title="Works in any browser, older and newer, on any device such as smartphone, tablet, desktop">HTML5 ready</abbr> web page template <small>Try resizing your browser, and view how this page adapts to display</small></h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h1 class="pull-right"><i class="icon-cloud-download"></i></h1>
+                                <p>Download <abbr title="Responsive HTML5 ready web page template">Template</abbr></p>
+                                <p><small>You're looking at this page based on Template itself, check out the source</small></p>
+                                <p><a role="button" class="btn btn-primary" href="build/template.zip?raw=true" target="_self">Get it</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h1 class="pull-right"><i class="icon-pencil"></i></h1>
+                                <p>Modify <code>TODO</code>s in source</p>
+                                <p><small>Plus with few other essential goodies, so you absolutely focus on your design</small></p>
+                                <p><a role="button" class="btn btn-success" href="http://getbootstrap.com/getting-started/" target="_blank">Bootstrap</a> <a role="button" class="btn btn-success" href="http://jquery.com/" target="_blank">jQuery</a> <a role="button" class="btn btn-success" href="https://github.com/aFarkas/html5shiv" target="_blank">html5shiv</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h1 class="pull-right"><i class="icon-thumbs-up-alt"></i></h1>
+                                <p>You're <abbr title="Responsive Web Design">RWD</abbr>y</p>
+                                <p><small>Understand what's all this fuss about on Wikipedia, and get ready to face the future</small></p>
+                                <p><a role="button" class="btn btn-info" href="http://en.wikipedia.org/wiki/Responsive_web_design" target="_blank">Read more &hellip;</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ul class="nav nav-pills">
+                            <li><a href="https://github.com/visitsb"><i class="icon-github"></i></a></li>
+                            <li><a href="https://twitter.com/visitsb"><i class="icon-twitter"></i></a></li>
+                            <li><a href="http://www.linkedin.com/in/shantibhushan"><i class="icon-linkedin"></i></a></li>
+                            <li><a href="https://www.facebook.com/visitsb"><i class="icon-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
         </div>
-    </section>
-    <!-- ./#header -->
-    <section id="content" class="row-fluid">
-        <!-- TODO: Choose entire 12 columns, or split these according your layout -->
-        <div class="span12">
-            <dl>
-                <dt>What</dt>
-                <dd>
-                    <p>Responsive HTML5 ready web page template. Check how this template page responds on all devices, browsers in exactly the same way. Full responsive, typographically adaptive. </p>
-                    <p>Template is a single HTML page which you can use as a skeleton for designing your responsive, adaptive web site.</p>
-                    <p>Try resizing your browser, or view it on your phone, tablet or desktop.</p>
-                </dd>
-                <dt>Get</dt>
-                <dd>
-                    <p><a href="build/template.zip?raw=true"><i class="icon-chevron-sign-down"></i> Download</a> and get started with Responsive Web Design rightaway.</p>
-                </dd>
-                <dt>Use</dt>
-                <dd>
-                    <p>Search for <i class="icon-pushpin"></i> <code>TODO:</code> comments in source for places you should update and you are set!</p>
-                </dd>
-                <dt>Credits</dt>
-                <dd>
-                    <p><a class="label" href="https://github.com/visitsb/template" target="_self">@visitsb</a> says the sooner you use this, the better credit you'll deserve.</p>
-                </dd>
-            </dl>
-        </div>
-        <!-- /.span12 -->
-    </section>
-    <!-- ./#content -->
-    <footer id="footer" class="row-fluid">
-        <div class="span12">
-            <p><small><img src="img/logo-alt.png" class="pull-right" alt="Your product name" width="54" height="42" /> Taglines. Copyright &copy; <a href="/" title="Your product name">Your product name</a>. All rights reserved.</small></p>
-        </div>
-    </footer>
-    <!-- ./#footer -->
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
 </div>
 </body>
-<script type="text/javascript" language="javascript" src="js/json.min.js?v=2.0"></script>
-<script type="text/javascript" language="javascript" src="js/jquery.min.js?v=1.10.1"></script>
-<script type="text/javascript" language="javascript" src="js/bootstrap.min.js?v=2.3.2"></script>
-<script type="text/javascript" language="javascript" src="js/console.min.js?v=0.1.0"></script>
-<!--[if lt IE 9]>
-	<script type="text/javascript" language="javascript" src="js/respond.min.js?v=1.3.0"></script>
-<![endif]-->
+<script type="text/javascript" language="javascript" src="js/console-0.1.0.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/json-2.0.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery-1.10.1.min.js"></script>
+<!-- Use below jQuery if you do not intend to support Internet Explorer 6, 7, or 8 -->
+<!--<script type="text/javascript" language="javascript" src="js/jquery-2.0.3.min.js"></script>-->
+<script type="text/javascript" language="javascript" src="js/bootstrap-3.0.3.min.js"></script>
 <!-- TODO: Include any additional 3rd party JS libraries here. Feel free to host or pull these off a CDN -->
-<script type="text/javascript" language="javascript" src="js/flowtype.min.js?v=1.0"></script>
+<script type="text/javascript" language="javascript" src="js/flowtype-1.0.min.js"></script>
 <script type="text/javascript" language="javascript"><!--
 	$(document).ready(function(event) {
 		$('body').flowtype({	// TODO: Tweak responsive typography options here

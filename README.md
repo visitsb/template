@@ -12,12 +12,12 @@ Template has a simple goal in mind - *Provide a simple standard, skeleton HTML p
 
 Template pre-includes below libraries-
 
-* Bootstrap 2.3.2 (Responsive CSS3, and JS versions)
-* Respond JS 1.3.0 (Support for responsive CSS3 on older IE browsers)
+* Bootstrap 3.0.3 (Responsive CSS3, and JS versions)
+* Respond JS 1.4.2 (Support for responsive CSS3 on older IE browsers)
 * Font Awesome 3.2.1
 * HTML5 Shim 3.6.2 (Necessary polyfills for HTML5 elements under older browsers)
 * JSON 2.0 (Fallback to parse JSON on older browsers)
-* jQuery 1.10.1
+* jQuery 1.10.1 (Also jQuery 2.0.3 if you decide to)
 * Console 0.1.0 (Polyfill to support console.log on older browsers)
 * FlowType 1.0 (for fully responsive typography on all browsers)
 
